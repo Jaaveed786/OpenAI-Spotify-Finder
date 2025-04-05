@@ -11,7 +11,7 @@
 #
 # if __name__ == "__main__":
 #     # Example song URI
-#     song_uri = "spotify:track:6rqhFgbbKwnb9MLmUQDhG6"  # Replace with your desired song URI
+#     song_uri = ""  # Replace with your desired song URI
 #
 #     # Play the song
 #     play_song(song_uri)
@@ -23,15 +23,14 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Set up your OpenAI API key
-openai.api_key = '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'
+openai.api_key = "  "#Get api_key and paste it here
 
 # Set up your Spotify API credentials
 spotify_client_id = 'YOUR_SPOTIFY_CLIENT_ID'
 spotify_client_secret = 'YOUR_SPOTIFY_CLIENT_SECRET'
 
 # Authenticate with Spotify API
-spotify_client_credentials_manager = SpotifyClientCredentials(client_id=spotify_client_id,
-                                                              client_secret=spotify_client_secret)
+spotify_client_credentials_manager = SpotifyClientCredentials(client_id=spotify_client_id,client_secret=spotify_client_secret)
 sp = spotipy.Spotify(client_credentials_manager=spotify_client_credentials_manager)
 
 
